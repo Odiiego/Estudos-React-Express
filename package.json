@@ -1,0 +1,30 @@
+{
+  "name": "estudos-react-express",
+  "version": "1.0.0",
+  "description": "Repositório para documentar meus estudos aprendendo react e express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"npm run start --prefix client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiegoPaula/Estudos-React-Express.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DiegoPaula/Estudos-React-Express/issues"
+  },
+  "homepage": "https://github.com/DiegoPaula/Estudos-React-Express#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.20"
+  }
+}
