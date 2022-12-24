@@ -1,12 +1,14 @@
-const express = require("express")
-const { v4: uuidv4 } = require('uuid')
-const app = express()
+const express = require("express");
+const cors = require("cors");
+const { v4: uuidv4 } = require('uuid');
+const app = express();
+app.use(cors());
 
 app.use(express.json({ extended: false }));
 
 const todos = [
     {
-        message:"Wash Car...",
+        message: "Wash Car...",
         id: 1
     },
     {
