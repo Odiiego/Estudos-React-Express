@@ -1,0 +1,10 @@
+.heading {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 4rem 0 3rem 0;
+}
+
+.heading h1 {
+    width: auto;
+    font-size: 4rem;
+}

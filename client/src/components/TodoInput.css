@@ -1,0 +1,36 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.input {
+    width: calc(100% - .75rem);
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid goldenrod;
+    margin: 3rem 0 1rem 0;
+    font-size: 1.75rem;
+    transition: padding .5s ease;
+}
+
+.input:focus {
+    outline: none;
+    border-bottom: 2.5px solid goldenrod;
+    padding: .75rem;
+}
+
+.submitBtn {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    padding: .5rem 2rem;
+    background-color: goldenrod;
+    border: none;
+}
+
+.submitBtn:active {
+    transform: scale(.9);
+}

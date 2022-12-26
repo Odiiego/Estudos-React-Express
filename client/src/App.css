@@ -2,16 +2,26 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: #f4f4f4;
     color: #333;
 }
 
-.heading {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 3rem 0;
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: 
+        linear-gradient(rgba(0, 123, 255, .5) 50%, rgba(0, 123, 255, .2)),
+        linear-gradient(to bottom right, rgba(0, 123, 255, .4) 30%, rgba(0, 123, 255, 0)),
+        linear-gradient(#01c7d1, #01c7d1);
 }
 
-.heading h1 {
-    font-size: 4rem;
+#root {
+    width: 60%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

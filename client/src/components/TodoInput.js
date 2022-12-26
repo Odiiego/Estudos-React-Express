@@ -1,6 +1,7 @@
-import React, {useRef} from 'react'
+import React, { useRef } from 'react'
+import './TodoInput.css'
 
-const TodoInput = ({createTodo}) => {
+const TodoInput = ({ createTodo }) => {
     const todoInput = useRef('')
 
     const handleSubmit = (e) => {
@@ -11,9 +12,9 @@ const TodoInput = ({createTodo}) => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <input type="text" ref={ todoInput } required />
-            <input type="submit" />
+        <form onSubmit={handleSubmit} className="form">
+            <input type="text" ref={todoInput} required className='input' />
+            <input type="submit" className='submitBtn' value="Add Todo" />
         </form>
     )
 }
