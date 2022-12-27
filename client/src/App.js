@@ -20,7 +20,12 @@ function App() {
   }, []);
 
   const createTodo = async (text) => {
-    const res = await axios.post("http://localhost:5001", {message: text})
+    const res = await axios.post("http://localhost:5001", { message: text })
+    setTodos(res.data)
+  }
+
+  const deleteTodo = async (todo) => {
+    const res = await axios.delete(`http://localhost:5001/${todo.id}`, { data: todo })
     setTodos(res.data)
   }
 
@@ -29,7 +34,7 @@ function App() {
       <div className="container">
         <Header />
         <TodoInput createTodo={createTodo} />
-        {todos ? <Todos todos={todos} /> : <Preloader />}
+        {todos ? <Todos todos={todos} deleteTodo={deleteTodo} /> : <Preloader />}
       </div>
     </div>
   );

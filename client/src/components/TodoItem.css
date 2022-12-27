@@ -12,6 +12,10 @@
     overflow-wrap: break-word;
 }
 
+.todoItem .todoContent:hover {
+    cursor: pointer;
+}
+
 .todoItem .todoContent:hover::after {
     position: absolute;
     right: 0;
