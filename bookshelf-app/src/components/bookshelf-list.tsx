@@ -2,7 +2,7 @@ import React from 'react'
 
 import { BookshelfListRow } from './bookshelf-list-row'
 
-import './../styles/bookshelf-list.css'
+// import './../styles/bookshelf-list.css'
 
 interface BookUI {
     id: number;
