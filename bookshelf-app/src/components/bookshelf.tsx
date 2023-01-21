@@ -3,7 +3,7 @@ import axios from "axios"
 
 import { BookshelfList } from "./bookshelf-list";
 
-// import './../styles/bookshelf.css'
+import './../styles/bookshelf.css'
 
 export const Bookshelf = () => {
     const [author, setAuthor] = useState('')
